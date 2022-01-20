@@ -1,6 +1,6 @@
 # PyT-ImbalancedDatasetSampler
 
-##Introduction
+#Introduction
 
 An imbalanced dataset sampler for PyTorch.
 This an alternative for ufoym's [ImbalancedDatasetSampler](https://github.com/ufoym/imbalanced-dataset-sampler).
@@ -14,7 +14,7 @@ We do not require external packages other than pyTorch.
 
 For a nice explanation with great visuals of over- and undersampling visit [ufomy's](https://github.com/ufoym/imbalanced-dataset-sampler) github project. 
 
-##Description
+#Description
 
 Create an instance of the `ImbalancedDatasetSampler` and pass it to the pyTorch `DataLoader`
 
@@ -39,7 +39,7 @@ The `ImbalancedDatasetSampler` takes multiple arguments allowing for different b
 - callback_type: If set to "single" the function will be called with the index of the dataset `callback_get_label(idx)`. If set to multi, no arguments will be passed and it is expected to return a list of labels with length `len(dataset)`.
 
 
-##How to install
+#How to install
 You can directly install the `imbalanced_sampler` package from the provided `setup.py` file
 
 ```pip install .```
@@ -50,6 +50,6 @@ Alternativly install from the provided `tar.gz` file
 
 Finally, you could just copy the `ImbalancedDatasetSampler.py` to your projects location.
 
-##Future
+#Future
 
 I want to add support for manually setting the classes to different sizes.
