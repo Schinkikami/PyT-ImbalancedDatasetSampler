@@ -54,5 +54,3 @@ Finally, you could just copy the `ImbalancedDatasetSampler.py` to your projects 
 
 
 
-##Examples
-
