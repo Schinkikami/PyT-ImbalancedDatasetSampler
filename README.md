@@ -3,16 +3,14 @@
 ##Introduction
 
 An imbalanced dataset sampler for PyTorch.
-This an alternative implementation for ufoym's [ImbalancedDatasetSampler](https://github.com/ufoym/imbalanced-dataset-sampler).
+This an alternative for ufoym's [ImbalancedDatasetSampler](https://github.com/ufoym/imbalanced-dataset-sampler).
 
-It does not randomly draw elements by a multinomial distribution, which unwantetly draws some elements multiple times
-while skipping over other elements, but instead wraps the dataset around (when oversampling).
+It does not randomly draw elements by a multinomial distribution, which may unwantetly draw some elements multiple times
+while skipping over other elements, but instead wraps the dataset around when oversampling.
 
 Additionally, a finer control over the over- and undersampling procedure is allowed, by manually setting the number of data-points per-class
 or specifing per-class over- and undersampling factors.
-
-We also do not require external packages other than pyTorch.
-
+We do not require external packages other than pyTorch.
 
 For a nice explanation with great visuals of over- and undersampling visit [ufomy's](https://github.com/ufoym/imbalanced-dataset-sampler) github project. 
 
@@ -52,5 +50,6 @@ Alternativly install from the provided `tar.gz` file
 
 Finally, you could just copy the `ImbalancedDatasetSampler.py` to your projects location.
 
+##Future
 
-
+I want to add support for manually setting the classes to different sizes.
